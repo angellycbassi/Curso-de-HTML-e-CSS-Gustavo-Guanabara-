@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/*
+id: Somente em um elemento
+class: Pode em vários elementos
+*/
+
+
+body {
+    background-color: rgb(208, 255, 239);
+    font-family: sans-serif;
+}
+
+h1 {
+    color: rgb(32, 126, 95);
+}
+
+h1#principal {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(39, 83, 60);
+    back
+}
+
+h2 {
+    color: rgb(58, 163, 128);
+}
+
+.basico {
+    color: rgb(58, 163, 128);
+}
+
+.intermediario {
+    color: rgb(255, 255, 135);
+}
+
+.avancado {
+    color: rgb(255, 79, 79);
+}
+
+.destaque {
+    background-color: rgba(255, 255, 0, 0.449);
+}
+
