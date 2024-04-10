@@ -2,3 +2,66 @@
 
 /*Todas as demais medias
 
+/* Rypical Devise Breakpoints 
+Pequenos Telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1200px
+Telas Grandes: acime de 1200px
+*/
+
+@media print { /*impressão*/
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*tablet*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    #phone {display: none;}
+    #tablet {display: block;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /*desktop*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: block;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width: 1200px) { /*telas grandes*/
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: block;}
+}
+
